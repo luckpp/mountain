@@ -1,0 +1,9 @@
+.border {
+  border: 1px solid white;
+  padding: 5px;
+
+  &:hover {
+    background-color: rgba(36, 57, 78, 0.75);
+    cursor: pointer;
+  }
+}

@@ -8,6 +8,7 @@ import { GalleryDashboardComponent } from './components/gallery/gallery-dashboar
 import { StructureDashboardComponent } from './components/structure/structure-dashboard/structure-dashboard.component';
 import { ContactDashboardComponent } from './components/contact/contact-dashboard/contact-dashboard.component';
 import { MenuComponent } from './components/menu/menu/menu.component';
+import { BigButtonComponent } from './components/misc/big-button/big-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuComponent } from './components/menu/menu/menu.component';
     GalleryDashboardComponent,
     StructureDashboardComponent,
     ContactDashboardComponent,
-    MenuComponent
+    MenuComponent,
+    BigButtonComponent
   ],
   imports: [
     BrowserModule,

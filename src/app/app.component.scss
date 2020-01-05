@@ -9,7 +9,7 @@
   flex-grow: 1;
   display: flex;
   //background-image: url("/assets/pictures/background.jpg");
-  background: url(/assets/pictures/background3.jpg) no-repeat center center fixed; 
+  background: url(/assets/pictures/background4.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,10 +17,11 @@
 }
 
 .content {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   margin-top: 2vh;
   margin-bottom: 1vh;
+  padding: 10px;
   flex-grow: 1;
   //background-color: red;
   background: rgba(36, 57, 78, 0.75);

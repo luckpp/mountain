@@ -4,10 +4,15 @@ import { HomeDashboardComponent } from './components/home/home-dashboard/home-da
 
 
 const routes: Routes = [
-  // {
-  //   path: "/home",
-  //   component: HomeDashboardComponent
-  // }
+  {
+    path: "home",
+    component: HomeDashboardComponent
+  },
+  { 
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
