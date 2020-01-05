@@ -1,0 +1,47 @@
+$logo-picture-size: 50px;
+$logo-picture-margin: 5px;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+
+  //background: linear-gradient(90deg, rgba(0,58,115,1) 0%, rgba(0,77,152,1) 49%, rgba(0,127,153,1) 100%);
+  //background: rgb(36,57,78);
+  background: linear-gradient(90deg, rgba(36,57,78,1) 0%, rgba(21,54,85,1) 49%, rgba(0,127,153,1) 100%);
+  color: white;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .logo-picture {
+    margin: $logo-picture-margin;
+    min-width: $logo-picture-size;
+    min-height: $logo-picture-size;
+  }
+}
+
+.nav-wrapper {
+  flex-grow: 1;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+
+  flex-grow: 1;
+
+  span {
+    font-weight: 1000;
+    cursor: pointer;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+}
+
