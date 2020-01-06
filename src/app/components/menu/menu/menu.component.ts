@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  navigateTo(pageType: PageTypes) {
+  navigateTo(pageType: string) {
     this._router.navigateByUrl(`/${pageType}/dashboard`);
   }
 }

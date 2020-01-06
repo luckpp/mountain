@@ -2,3 +2,13 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .card {
+    max-width: 35rem;
+  }
+}

@@ -8,9 +8,8 @@
 .card {
   margin: 1rem;
   width: 15rem;
-  background-color: transparent;
 }
 
 .card-main {
-  width: 25rem;
+  flex-grow: 0.5;
 }
