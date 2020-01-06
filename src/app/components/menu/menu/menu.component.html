@@ -1,26 +1,24 @@
 <div class="wrapper">
   <div class="logo-wrapper">
-    <img class="logo-picture" src="/assets/pictures/logo.svg">
-    <div>
-      <h1>Prietenii Muntilor</h1>
-    </div>
+    <img class="logo-picture pointer" (click)="navigateTo('home')" src="/assets/pictures/logo1.png">
   </div>
   <nav class="nav-wrapper">
 
-    <div class="nav-item">
-      <span>DESPRE NOI</span>
+    <div class="nav-item-wrapper">
+      <span class="nav-item pointer" (click)="navigateTo('about')">Despre noi</span>
     </div>
-    <div class="nav-item">
-      <span>EVENIMENTE</span>
+    <div class="nav-item-wrapper">
+      <span class="nav-item pointer" (click)="navigateTo('events')">Evenimente</span>
     </div>
-    <div class="nav-item">
-      <span>GALERIE</span>
+    <div class="nav-item-wrapper">
+      <span class="nav-item pointer" (click)="navigateTo('gallery')">Galerie</span>
     </div>
-    <div class="nav-item">
-      <span>ORGANIZARE</span>
+    <div class="nav-item-wrapper">
+      <span class="nav-item pointer" (click)="navigateTo('structure')">Organizare</span>
     </div>
-    <div class="nav-item">
-      <span>CONTACT</span>
+    <div class="nav-item-wrapper">
+      <span class="nav-item pointer" (click)="navigateTo('contact')">Contact</span>
     </div>
   </nav>
+
 </div>

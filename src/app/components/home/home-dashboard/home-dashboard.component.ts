@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PageTypes } from 'src/app/model/page-types.model';
 
 @Component({
   selector: 'app-home-dashboard',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeDashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  navigateTo(pageType: PageTypes) {
+    this._router.navigateByUrl(`/${pageType}/dashboard`);
   }
 
 }

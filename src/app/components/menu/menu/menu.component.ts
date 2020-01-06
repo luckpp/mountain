@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTypes } from '../../../model/page-types.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  navigateTo(pageType: PageTypes) {
+    this._router.navigateByUrl(`/${pageType}/dashboard`);
+  }
 }

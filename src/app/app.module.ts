@@ -9,6 +9,8 @@ import { StructureDashboardComponent } from './components/structure/structure-da
 import { ContactDashboardComponent } from './components/contact/contact-dashboard/contact-dashboard.component';
 import { MenuComponent } from './components/menu/menu/menu.component';
 import { BigButtonComponent } from './components/misc/big-button/big-button.component';
+import { AboutDashboardComponent } from './components/about/about-dashboard/about-dashboard.component';
+import { EventsDashboardComponent } from './components/events/events-dashboard/events-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BigButtonComponent } from './components/misc/big-button/big-button.comp
     StructureDashboardComponent,
     ContactDashboardComponent,
     MenuComponent,
-    BigButtonComponent
+    BigButtonComponent,
+    AboutDashboardComponent,
+    EventsDashboardComponent
   ],
   imports: [
     BrowserModule,
