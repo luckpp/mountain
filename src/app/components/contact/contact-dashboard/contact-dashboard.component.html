@@ -1,1 +1,38 @@
-<p>contact-dashboard works!</p>
+<h2>
+  Asociatia Prietenii Muntilor
+</h2>
+
+<div class="card-wrapper">
+  <div class="card card-main">
+    <img src="/assets/pictures/cabana.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Asociatia Prietenii Muntilor</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Sediu</li>
+      <li class="list-group-item">Romania, Str.Pictor Andreescu, Reşiţa 320079</li>
+      <li class="list-group-item">contact@prietenii-muntilor.ro</li>
+    </ul>
+  </div>
+</div>
+
+<h2>
+  Staff
+</h2>
+
+<div class="card-wrapper">
+
+  <div class="card" *ngFor="let member of members">
+    <img src="/assets/pictures/anonym.png" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{ member.name }}</h5>
+      <!-- <p class="card-text">O descriere scurta despre activitate, responsabilitati si/sau hobby-uri.</p> -->
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ member.position }}</li>
+      <li class="list-group-item">{{ member.phone }}</li>
+      <li class="list-group-item">{{ member.email }}</li>
+    </ul>
+  </div>
+
+</div>

@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutDashboardComponent implements OnInit {
 
-  constructor() { }
+  activities: string[];
+
+  constructor() {
+    this.activities = this.createActivities()
+  }
 
   ngOnInit() {
+  }
+
+  private createActivities(): string[] {
+    return [
+      'În fiecare an, în perioada vacanţelor şcolare de iarnă, tabere de schi.',
+      'Concursul de schi Cupa Prietenii Munţilor.',
+      'Concursul de schi Cupa de Vest-Ghiţă Bologa.',
+      'Acţiuni de ecologizare.',
+      'Ture prin munţii noştrii.',
+      'Ture cu bicicletele prin munţii noştrii.'
+    ]
   }
 
 }
