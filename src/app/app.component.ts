@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mountain';
+
+  showVericalMenuHandler(status: boolean) {
+    console.log(`showVericalMenuHandler(${status})`);
+  }
 }

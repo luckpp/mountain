@@ -22,5 +22,26 @@
       <span class="nav-item pointer" (click)="navigateTo('contact')">Contact</span>
     </div>
   </nav>
+</div>
 
+<div class="verical-nav-expanded-wrapper" *ngIf="verticalMenuVisible">
+  <div class="verical-nav">
+    <h3 class="pointer" (click)="vericalNavigateTo('home')">Acasa</h3>
+    <div class="separator"></div>
+    <h3 class="pointer" (click)="vericalNavigateTo('about')">Despre noi</h3>
+    <div class="separator"></div>
+    <h3 class="pointer" (click)="vericalNavigateTo('events')">Evenimente</h3>
+    <div class="separator"></div>
+    <h3 class="pointer" (click)="vericalNavigateTo('gallery')">Galerie</h3>
+    <div class="separator"></div>
+    <h3 class="pointer" (click)="vericalNavigateTo('structure')">Organizare</h3>
+    <div class="separator"></div>
+    <h3 class="pointer" (click)="vericalNavigateTo('contact')">Contact</h3>
+    <div class="separator"></div>
+  </div>
+  <i class="fas fa-bars fa-2x pointer verical-nav-expanded-button" (click)="showVericalMenuClicked()"></i>
+</div>
+
+<div class="verical-nav-collapsed-wrapper" *ngIf="!verticalMenuVisible">
+  <i class="fas fa-bars fa-2x pointer verical-nav-button-closed" (click)="showVericalMenuClicked()"></i>
 </div>
